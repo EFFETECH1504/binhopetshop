@@ -10,3 +10,4 @@ Horário: segunda a sexta, 08:30–19:00; sábado, 08:30–17:00; domingo fechad
 Avaliação pública de referência: 4,5/5 com cerca de 650 avaliações.
 
 Os produtos, preços e textos comerciais do catálogo são ilustrativos para demonstração e devem ser substituídos por informações reais antes de uma publicação.
+Demonstração EFFETECH
