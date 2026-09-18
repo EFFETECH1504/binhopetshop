@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Shop e Clínica Veterinária Binho — Demonstração EFFETECH</title>
+  <meta name="description" content="Demonstração de presença digital para a Pet Shop e Clínica Veterinária Binho.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="Pet Shop e Clínica Veterinária Binho">
+        
+      </a>
+      <nav class="nav-links">
+        <a href="#produtos">Produtos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#localizacao">Localização</a>
+      </nav>
+      <button class="cart-button" id="openCart" aria-label="Abrir carrinho">
+        🛒 <span>Carrinho</span> <strong id="cartCount">0</strong>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">PET SHOP • CUIDADO • CONFIANÇA</span>
+          <h1>Tudo para o seu pet <span>com carinho e confiança.</span></h1>
+          <p>Rações, produtos, banho, tosa e cuidados para o seu melhor amigo.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#produtos">Ver produtos</a>
+            <a class="btn btn-light" href="#servicos">Conhecer serviços</a>
+          </div>
+          <div class="hero-note">Demonstração criada pela EFFETECH • Conteúdo de catálogo ilustrativo.</div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-paw">🐾</div>
+          <div>
+            <small>BINHO</small>
+            <h2>O melhor para o seu amiguinho.</h2>
+            <p>Encontre produtos, conheça os serviços e fale com a equipe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories container">
+      <a href="#produtos" data-filter="Cães">🐶<span>Cães</span></a>
+      <a href="#produtos" data-filter="Gatos">🐱<span>Gatos</span></a>
+      <a href="#produtos" data-filter="Pássaros">🐦<span>Pássaros</span></a>
+      <a href="#produtos" data-filter="Acessórios">🦴<span>Acessórios</span></a>
+      <a href="#produtos" data-filter="Medicamentos">💊<span>Medicamentos</span></a>
+      <a href="#servicos">🛁<span>Banho e tosa</span></a>
+    </section>
+
+    <section id="produtos" class="section container">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">CATÁLOGO</span>
+          <h2>Produtos para o seu pet</h2>
+        </div>
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="Todos">Todos</button>
+          <button class="filter" data-filter="Cães">Cães</button>
+          <button class="filter" data-filter="Gatos">Gatos</button>
+          <button class="filter" data-filter="Pássaros">Pássaros</button>
+          <button class="filter" data-filter="Acessórios">Acessórios</button>
+          <button class="filter" data-filter="Medicamentos">Medicamentos</button>
+        </div>
+      </div>
+      <div class="products" id="productGrid"></div>
+    </section>
+
+    <section id="servicos" class="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">CUIDADOS</span>
+            <h2>Banho e tosa</h2>
+          </div>
+          <p class="section-copy">Cuidados para deixar seu pet limpo, confortável e bem cuidado.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">🛁</div>
+            <h3>Banho</h3>
+            <p>Higiene e cuidado para o seu pet.</p>
+            <button class="text-btn" onclick="requestService('Banho')">Consultar serviço →</button>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">✂️</div>
+            <h3>Tosa</h3>
+            <p>Cuidados com o pelo de acordo com a necessidade do pet.</p>
+            <button class="text-btn" onclick="requestService('Tosa')">Consultar serviço →</button>
+          </article>
+          <article class="service-card highlight">
+            <div class="service-icon">💬</div>
+            <h3>Agende pelo WhatsApp</h3>
+            <p>Escolha o serviço e fale diretamente com a loja.</p>
+            <button class="text-btn" onclick="requestService('Banho e Tosa')">Falar com a loja →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about container">
+      <div class="about-box">
+        <span class="eyebrow">BINHO</span>
+        <h2>Cuidado, carinho e tudo o que seu pet precisa.</h2>
+        <p>Banho, tosa e cuidados para o seu pet, com atendimento próximo e carinhoso.</p>
+        <div class="about-pills">
+          <span>🐾 Produtos</span><span>🛁 Banho e tosa</span><span>💜 Atendimento</span>
+        </div>
+      </div>
+      <div class="contact-card">
+        <h3>Visite a loja</h3>
+        <p>Rua da Pedreira, 1353 — Campo Pequeno, Colombo/PR. Um espaço completo para cuidar do seu amiguinho.</p>
+        <button class="btn btn-primary" onclick="showContact()">Ver contato</button>
+      </div>
+    </section>
+  
+    <!-- ================= AVALIAÇÕES ================= -->
+    <section id="avaliacoes" class="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">AVALIAÇÕES</span>
+            <h2>O que os clientes dizem</h2>
+          </div>
+          <p class="section-copy">A Pet Shop e Clínica Veterinária Binho possui presença no Google; a demonstração pode destacar avaliações e informações reais do estabelecimento.</p>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card review-placeholder">
+            <div class="stars">★★★★★</div>
+            <strong>4,8 estrelas</strong>
+            <p>Nota pública encontrada para a Pet Shop e Clínica Veterinária Binho. Os comentários individuais podem ser inseridos após conferência no Google.</p>
+          </article>
+
+          <article class="review-card review-placeholder">
+            <div class="stars">★★★★★</div>
+            <strong>650 avaliações</strong>
+            <p>Quantidade de avaliações encontrada em referência pública recente.</p>
+          </article>
+
+          <article class="review-card review-placeholder">
+            <div class="stars">★★★★★</div>
+            <strong>Comentários reais</strong>
+            <p>Espaço reservado para destacar depoimentos reais dos clientes.</p>
+          </article>
+        </div>
+
+        <div class="reviews-action">
+          <a class="btn btn-light" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Pet%20Shop%20e%20Cl%C3%ADnica%20Veterin%C3%A1ria%20Binho%2C%20Rua%20da%20Pedreira%2C%201353%2C%20Campo%20Pequeno%2C%20Colombo%2C%20PR">
+            Ver avaliações no Google
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LOCALIZAÇÃO ================= -->
+    <section id="localizacao" class="location">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">LOCALIZAÇÃO</span>
+            <h2>Encontre a Pet Shop e Clínica Veterinária Binho</h2>
+          </div>
+          <p class="section-copy">Facilite o caminho do cliente até a loja com endereço e mapa.</p>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-info-card">
+            <span class="eyebrow">VISITE A LOJA</span>
+            <h3>Pet Shop e Clínica Veterinária Binho</h3>
+            <p>Rua da Pedreira, 1353<br>Campo Pequeno — Colombo/PR<br>CEP 83404-010</p>
+            <p><strong>Telefone:</strong> (41) 3663-5050</p>
+            <p><strong>Horário:</strong><br>Segunda a sexta: 08:30–19:00<br>Sábado: 08:30–17:00<br><small>Horários públicos consultados; confirme antes de publicar como informação definitiva.</small></p>
+
+            <div class="location-actions">
+              <a class="btn btn-primary" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps/search/?api=1&query=Pet%20Shop%20e%20Cl%C3%ADnica%20Veterin%C3%A1ria%20Binho%2C%20Rua%20da%20Pedreira%2C%201353%2C%20Campo%20Pequeno%2C%20Colombo%2C%20PR">
+                Abrir no Google Maps
+              </a>
+              <a class="btn btn-light" target="_blank" rel="noopener"
+                 href="#">
+                Instagram
+              </a>
+            </div>
+          </div>
+
+          <div class="map-card">
+            <iframe
+              title="Localização da Pet Shop e Clínica Veterinária Binho no Google Maps"
+              src="https://www.google.com/maps?q=Pet%20Shop%20e%20Cl%C3%ADnica%20Veterin%C3%A1ria%20Binho%2C%20Rua%20da%20Pedreira%2C%201353%2C%20Campo%20Pequeno%2C%20Colombo%2C%20PR&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="brand">
+        
+      </div>
+      <small>Demonstração criada pela EFFETECH • Conteúdo de catálogo ilustrativo</small>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho">
+    <div class="cart-head">
+      <div><span class="eyebrow">SEU PEDIDO</span><h2>Carrinho</h2></div>
+      <button class="close" id="closeCart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty">
+      <div>🛒</div>
+      <h3>Seu carrinho está vazio</h3>
+      <p>Adicione produtos para montar um pedido.</p>
+    </div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total"><span>Total estimado</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <button class="btn btn-primary full" onclick="checkout()">Finalizar pelo WhatsApp</button>
+      <small>Os valores desta demonstração são ilustrativos.</small>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

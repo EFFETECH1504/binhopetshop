@@ -1,0 +1,390 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Nunito,Arial,sans-serif;color:#24302a;background:#fffdf9}a{text-decoration:none;color:inherit}button{font:inherit;cursor:pointer;border:0}.container{width:min(1120px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:#fffdf9ee;backdrop-filter:blur(12px);border-bottom:1px solid #eee8df}.nav{height:74px;display:flex;align-items:center;gap:30px}.brand{display:flex;align-items:center;white-space:nowrap}.brand-logo{width:58px;height:58px;object-fit:contain;border-radius:50%;display:block}.footer-logo{width:52px;height:52px}.nav-links{display:flex;gap:24px;margin-left:auto;font-weight:700;color:#526057}.nav-links a:hover{color:#8D459B}.cart-button{background:#8D459B;color:#fff;border-radius:13px;padding:11px 15px;display:flex;align-items:center;gap:7px;font-weight:800}.cart-button strong{background:#8D459B;border-radius:999px;padding:2px 7px;font-size:12px}.hero{padding:76px 0 55px;background:linear-gradient(135deg,#fff8ed,#fff8ed)}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}.eyebrow{font-size:12px;font-weight:900;letter-spacing:1.5px;color:#8D459B}.hero h1{font-size:clamp(42px,6vw,68px);line-height:.98;margin:15px 0 22px;letter-spacing:-2px}.hero h1 span{color:#8D459B}.hero p{font-size:19px;line-height:1.6;color:#5d6961;max-width:620px}.hero-actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 19px;border-radius:12px;font-weight:900}.btn-primary{background:#8D459B;color:#fff;box-shadow:0 8px 20px #8D459B30}.btn-light{background:#fff;border:1px solid #e5ded4;color:#8D459B}.hero-note{font-size:12px;color:#89928d;margin-top:16px}.hero-card{min-height:310px;border-radius:28px;background:#8D459B;color:#fff;padding:34px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;box-shadow:0 20px 50px #8D459B25}.hero-card:before{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:#8D459B;right:-90px;top:-90px}.hero-paw{font-size:100px;position:absolute;right:28px;top:35px;transform:rotate(-12deg)}.hero-card small{font-weight:900;letter-spacing:2px}.hero-card h2{font-size:28px;margin:8px 0}.hero-card p{color:#e5f0e8;font-size:15px;margin:0}.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:-28px;position:relative}.categories a{background:#fff;border:1px solid #ece5dc;border-radius:16px;padding:16px 10px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:800;box-shadow:0 8px 20px #00000008}.categories a:first-child{border-bottom:3px solid #8D459B}.section{padding:75px 0}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:25px}.section-heading h2{font-size:34px;margin:7px 0 0}.section-copy{max-width:430px;color:#69746d;line-height:1.6}.filters{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.filter{padding:8px 12px;background:#f4f1ec;color:#5d675f;border-radius:999px;font-size:13px;font-weight:800}.filter.active,.filter:hover{background:#8D459B;color:#fff}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.product{background:#fff;border:1px solid #ece6de;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:.2s}.product:hover{transform:translateY(-3px);box-shadow:0 12px 30px #0000000c}.product-img{height:205px;background:#f4f2ed;overflow:hidden;position:relative}.product-img img{width:100%;height:100%;object-fit:cover;display:block}.tag{position:absolute;top:10px;left:10px;background:#fff;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900;color:#8D459B}.product-body{padding:15px;display:flex;flex-direction:column;flex:1}.product-cat{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#8D459B;font-weight:900}.product h3{font-size:17px;margin:7px 0;line-height:1.2}.price{font-size:13px;color:#69746d;margin-bottom:13px}.product .btn{margin-top:auto;width:100%;padding:10px}.services{background:#fff4e3;padding:72px 0}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{background:#fff;border:1px solid #f2dfc8;border-radius:20px;padding:25px}.service-icon{font-size:35px}.service-card h3{font-size:22px;margin:15px 0 8px}.service-card p{color:#69746d;line-height:1.55}.service-card.highlight{border:2px solid #8D459B}.text-btn{background:none;padding:0;color:#8D459B;font-weight:900}.about{padding:75px 0;display:grid;grid-template-columns:1.3fr .7fr;gap:25px}.about-box,.contact-card{border-radius:22px;padding:30px;background:#fff;border:1px solid #ebe4db}.about-box{background:#fff8ed}.about-box h2{font-size:32px;margin:8px 0 12px}.about-box p{color:#626e66;line-height:1.6;max-width:700px}.about-pills{display:flex;gap:8px;flex-wrap:wrap}.about-pills span{background:#fff;padding:8px 11px;border-radius:999px;font-weight:800;font-size:13px}.contact-card h3{font-size:25px;margin-top:0}.contact-card p{color:#69746d;line-height:1.55}.contact-card .btn{width:100%}footer{border-top:1px solid #eee8df;padding:28px 0;background:#fff}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-inner small{color:#8a928d}.overlay{position:fixed;inset:0;background:#0008;opacity:0;pointer-events:none;transition:.2s;z-index:30}.overlay.open{opacity:1;pointer-events:auto}.cart-drawer{position:fixed;z-index:31;right:0;top:0;height:100%;width:min(430px,94%);background:#fffdf9;transform:translateX(105%);transition:.25s;display:flex;flex-direction:column;box-shadow:-15px 0 40px #0002}.cart-drawer.open{transform:translateX(0)}.cart-head{display:flex;justify-content:space-between;align-items:start;padding:25px;border-bottom:1px solid #ece5dc}.cart-head h2{margin:5px 0 0;font-size:27px}.close{font-size:30px;background:none;color:#59645d}.cart-items{padding:15px 25px;overflow:auto}.cart-row{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #eee8df}.cart-row img{width:64px;height:64px;border-radius:10px;object-fit:cover}.cart-row h4{margin:0 0 5px;font-size:14px}.cart-row small{color:#6b746e}.qty{display:flex;align-items:center;gap:7px;margin-top:7px}.qty button{width:24px;height:24px;border-radius:7px;background:#ece9e3;font-weight:900}.cart-empty{text-align:center;padding:60px 30px;color:#69746d}.cart-empty div{font-size:45px}.cart-empty h3{color:#27332c}.cart-footer{margin-top:auto;border-top:1px solid #ece5dc;padding:20px 25px;background:#fff}.cart-total{display:flex;justify-content:space-between;margin-bottom:14px}.cart-total strong{color:#8D459B}.full{width:100%}.cart-footer small{display:block;text-align:center;color:#8b938e;margin-top:10px}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);opacity:0;background:#26322b;color:#fff;padding:12px 17px;border-radius:10px;z-index:50;transition:.2s;font-weight:800}.toast.show{opacity:1;transform:translate(-50%,0)}@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-card{min-height:240px}.products{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:repeat(3,1fr)}.nav-links{display:none}.service-grid,.about{grid-template-columns:1fr}.section-heading{align-items:start;flex-direction:column}.filters{justify-content:flex-start}}@media(max-width:540px){.nav{height:65px}.cart-button span{display:none}.hero{padding-top:48px}.hero h1{font-size:43px}.categories{grid-template-columns:repeat(2,1fr);margin-top:-15px}.products{grid-template-columns:1fr 1fr;gap:10px}.product-img{height:155px}.product-body{padding:12px}.product h3{font-size:15px}.footer-inner{flex-direction:column;align-items:flex-start}.hero-actions .btn{flex:1}.section{padding:55px 0}}
+
+
+/* ================= AVALIAÇÕES + LOCALIZAÇÃO ================= */
+
+.brand-name{
+  font-weight:900;
+  font-size:20px;
+  letter-spacing:1.2px;
+  color:#8D459B;
+}
+
+.reviews{
+  background:#fff8ed;
+  padding:72px 0;
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.review-card{
+  background:#fff;
+  border:1px solid #ebe4db;
+  border-radius:20px;
+  padding:24px;
+  min-height:180px;
+}
+
+.review-card .stars{
+  color:#8D459B;
+  letter-spacing:2px;
+  font-size:18px;
+  margin-bottom:12px;
+}
+
+.review-card strong{
+  display:block;
+  margin-bottom:8px;
+  color:#27332c;
+}
+
+.review-card p{
+  color:#69746d;
+  line-height:1.55;
+  margin:0;
+}
+
+.review-placeholder{
+  border-style:dashed;
+}
+
+.reviews-action{
+  margin-top:22px;
+  text-align:center;
+}
+
+.location{
+  padding:72px 0;
+  background:#fff4e3;
+}
+
+.location-grid{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:22px;
+  align-items:stretch;
+}
+
+.location-info-card{
+  background:#fff;
+  border:1px solid #f2dfc8;
+  border-radius:22px;
+  padding:30px;
+}
+
+.location-info-card h3{
+  font-size:28px;
+  margin:8px 0 14px;
+}
+
+.location-info-card p{
+  color:#69746d;
+  line-height:1.65;
+}
+
+.location-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:22px;
+}
+
+.map-card{
+  min-height:360px;
+  border-radius:22px;
+  overflow:hidden;
+  border:1px solid #f2dfc8;
+  background:#fff;
+}
+
+.map-card iframe{
+  width:100%;
+  height:100%;
+  min-height:360px;
+  border:0;
+  display:block;
+}
+
+@media(max-width:900px){
+  .review-grid{
+    grid-template-columns:1fr;
+  }
+
+  .location-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:540px){
+  .location{
+    padding:55px 0;
+  }
+
+  .map-card,
+  .map-card iframe{
+    min-height:300px;
+  }
+
+  .location-actions .btn{
+    width:100%;
+  }
+}
+
+
+/* ================= IDENTIDADE VISUAL PARADA ANIMAL ================= */
+.brand-logo{
+  width:58px;
+  height:58px;
+  object-fit:cover;
+  border-radius:50%;
+  display:block;
+}
+.footer-logo{
+  width:52px;
+  height:52px;
+  object-fit:cover;
+  border-radius:50%;
+  display:block;
+}
+@media(max-width:540px){
+  .brand-logo{width:50px;height:50px}
+}
+
+/* Parada Animal — identidade visual */
+:root {
+    --primary: #8D459B;
+    --secondary: #8D459B;
+    --accent: #8D459B;
+}
+.site-logo {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+
+/* ================= IDENTIDADE VISUAL AU QUILATE'S ================= */
+:root {
+  --primary: #8D459B;
+  --secondary: #ffffff;
+  --accent: #8D459B;
+}
+.topbar{background:#ffffffee}
+.nav-links a:hover{color:#8D459B}
+.cart-button{background:#8D459B;color:#fff}
+.cart-button strong{background:#fff;color:#8D459B}
+.hero{background:linear-gradient(135deg,#ffffff,#f7eff7)}
+.eyebrow{color:#8D459B}
+.hero h1 span{color:#8D459B}
+.hero-card{background:#8D459B;color:#fff}
+.hero-card:before{background:#fff}
+.hero-card p{color:#f7edf7}
+.btn-primary{background:#8D459B;color:#fff;box-shadow:0 8px 20px #8D459B30}
+.btn-light{background:#fff;border:1px solid #d9c4d9;color:#8D459B}
+.categories a:first-child{border-bottom-color:#8D459B}
+.filter.active,.filter:hover{background:#8D459B;color:#fff}
+.product-cat,.tag{color:#8D459B}
+.services{background:#faf5fa}
+.service-card.highlight{border-color:#8D459B}
+.text-btn{color:#8D459B}
+.about-box{background:#faf5fa}
+.reviews{background:#faf5fa}
+.review-card .stars{color:#8D459B}
+.location-info-card{border-color:#dfcfe0}
+.location{background:#fff}
+.brand-name{color:#8D459B}
+.site-logo,.brand-logo,.footer-logo{object-fit:cover;border-radius:50%}
+@media(max-width:540px){.site-logo{width:50px;height:50px}}
+
+
+/* ================= AU QUILATE'S PALETTE ================= */
+:root{
+  --au-lilas:#8D459B;
+  --au-laranja:#FAB951;
+}
+.topbar{background:#fffdf9ee;border-bottom-color:#eadfe8}
+.nav-links a:hover{color:var(--au-lilas)}
+.cart-button{background:var(--au-lilas)}
+.hero{background:linear-gradient(135deg,#faf3fb,#fff8ed)}
+.hero h1 span,.eyebrow,.product-cat,.text-btn{color:var(--au-lilas)}
+.hero-card{background:var(--au-lilas);box-shadow:0 20px 50px #8D459B25}
+.hero-card:before{background:var(--au-laranja)}
+.btn-primary{background:var(--au-lilas);box-shadow:0 8px 20px #8D459B30}
+.btn-light{color:var(--au-lilas);border-color:#e5d7e7}
+.categories a:first-child{border-bottom-color:var(--au-laranja)}
+.filter.active,.filter:hover{background:var(--au-lilas)}
+.tag{color:var(--au-lilas)}
+.services{background:#fff8ed}
+.service-card.highlight{border-color:var(--au-laranja)}
+.about-box{background:#fff8ed}
+.reviews{background:#faf3fb}
+.review-card .stars{color:var(--au-laranja)}
+.location{background:#fff8ed}
+.location-info-card{border-color:#f2dfc8}
+
+/* ================= ARMAZÉM DOS BICHOS — IDENTIDADE SOFISTICADA ================= */
+:root{
+  --primary:#4A241C;
+  --secondary:#D7A53D;
+  --accent:#D7A53D;
+  --background:#F7F2EA;
+  --background-light:#FFFDF8;
+  --card:#FFFDF8;
+  --text:#2B211D;
+  --text-muted:#756A63;
+  --border:rgba(74,36,28,.12);
+}
+body{background:#F7F2EA;color:#2B211D}
+.topbar{background:rgba(255,253,248,.96);border-bottom:1px solid rgba(74,36,28,.12);box-shadow:0 4px 20px rgba(58,31,22,.06)}
+.nav-links a{color:#4A241C}
+.nav-links a:hover{color:#B98220}
+.brand-name{color:#4A241C}
+.site-logo,.brand-logo,.footer-logo{object-fit:cover;border-radius:50%;border:2px solid #D7A53D}
+.hero{background:radial-gradient(circle at 85% 20%,rgba(215,165,61,.18),transparent 30%),linear-gradient(135deg,#F7F2EA,#FFFDF8)}
+.eyebrow{color:#A56D16;letter-spacing:.14em}
+.hero h1{color:#3A211A}
+.hero h1 span{color:#A56D16}
+.hero p{color:#756A63}
+.hero-card{background:linear-gradient(145deg,#4A241C,#321711);color:#fff;box-shadow:0 24px 55px rgba(74,36,28,.24)}
+.hero-card:before{background:#D7A53D}
+.hero-card p{color:#F5EDE3}
+.btn-primary{background:#4A241C;color:#fff;box-shadow:0 10px 24px rgba(74,36,28,.20)}
+.btn-primary:hover{background:#321711}
+.btn-light{background:#FFFDF8;color:#4A241C;border:1px solid #D7C7B4}
+.categories a{color:#4A241C}
+.categories a:first-child{border-bottom-color:#D7A53D}
+.filter.active,.filter:hover{background:#4A241C;color:#fff}
+.product-cat,.tag,.text-btn{color:#A56D16}
+.services{background:#EFE6D8}
+.service-card{background:#FFFDF8;border-color:rgba(74,36,28,.10)}
+.service-card.highlight{border-color:#D7A53D;box-shadow:0 12px 30px rgba(74,36,28,.08)}
+.about-box{background:#FFF8EA;border:1px solid rgba(215,165,61,.24)}
+.reviews{background:#F7F2EA}
+.review-card{background:#FFFDF8;border-color:rgba(74,36,28,.10)}
+.review-card .stars{color:#D7A53D}
+.location{background:#EFE6D8}
+.location-info-card{background:#FFFDF8;border-color:#DEC8A4}
+footer{background:#2E1711;color:#F7F0E7}
+footer a{color:#F0C96D}
+.cart-button{background:#4A241C;color:#fff}
+.cart-button strong{background:#D7A53D;color:#3A211A}
+.section-title{color:#3A211A}
+.card{background:#FFFDF8}
+
+/* ================= AVIPET SANTA ROSA — IDENTIDADE VISUAL ================= */
+:root{
+  --primary:#F28C28;
+  --secondary:#111111;
+  --accent:#F28C28;
+  --background:#FFF8F1;
+  --background-light:#FFFFFF;
+  --card:#FFFFFF;
+  --text:#1B1B1B;
+  --text-muted:#6F6F6F;
+  --border:rgba(17,17,17,.10);
+}
+body{background:#FFF8F1;color:#1B1B1B}
+.topbar{background:rgba(255,255,255,.96);border-bottom:1px solid rgba(17,17,17,.10);box-shadow:0 4px 18px rgba(17,17,17,.06)}
+.nav-links a{color:#111}
+.nav-links a:hover{color:#F28C28}
+.brand-logo,.site-logo,.footer-logo{object-fit:cover;border-radius:50%;border:2px solid #F28C28}
+.hero{background:radial-gradient(circle at 84% 18%,rgba(242,140,40,.18),transparent 31%),linear-gradient(135deg,#FFF8F1,#FFFFFF)}
+.eyebrow{color:#D96F0B;letter-spacing:.14em}
+.hero h1{color:#111}
+.hero h1 span{color:#F28C28}
+.hero p{color:#666}
+.hero-card{background:linear-gradient(145deg,#111,#242424);color:#fff;box-shadow:0 24px 55px rgba(17,17,17,.20)}
+.hero-card:before{background:#F28C28}
+.hero-card p{color:#EAEAEA}
+.btn-primary{background:#111;color:#fff;box-shadow:0 10px 24px rgba(17,17,17,.18)}
+.btn-primary:hover{background:#F28C28;color:#111}
+.btn-light{background:#fff;color:#111;border:1px solid #E7D8CA}
+.categories a{color:#111}
+.categories a:first-child{border-bottom-color:#F28C28}
+.filter.active,.filter:hover{background:#111;color:#fff}
+.product-cat,.tag,.text-btn{color:#D96F0B}
+.services{background:#FFF0E3}
+.service-card{background:#fff;border-color:rgba(17,17,17,.10)}
+.service-card.highlight{border-color:#F28C28;box-shadow:0 12px 30px rgba(17,17,17,.08)}
+.about-box{background:#FFF0E3;border:1px solid rgba(242,140,40,.24)}
+.reviews{background:#FFF8F1}
+.review-card{background:#fff;border-color:rgba(17,17,17,.10)}
+.review-card .stars{color:#F28C28}
+.location{background:#FFF0E3}
+.location-info-card{background:#fff;border-color:#F3C59D}
+footer{background:#111;color:#F7F7F7}
+footer a{color:#F7A64B}
+.cart-button{background:#111;color:#fff}
+.cart-button strong{background:#F28C28;color:#111}
+
+/* ================= CITY CÃO — IDENTIDADE VISUAL ================= */
+:root{
+  --primary:#FFD400;
+  --secondary:#E53935;
+  --accent:#E53935;
+  --background:#FFFBEA;
+  --background-light:#FFFFFF;
+  --card:#FFFFFF;
+  --text:#1A1A1A;
+  --text-muted:#666666;
+  --border:rgba(20,20,20,.10);
+}
+body{background:#FFFBEA;color:#1A1A1A}
+.topbar{background:rgba(255,255,255,.97);border-bottom:1px solid rgba(20,20,20,.10);box-shadow:0 4px 18px rgba(20,20,20,.06)}
+.nav-links a{color:#1A1A1A}.nav-links a:hover{color:#E53935}
+.brand-logo,.site-logo,.footer-logo{object-fit:contain;border-radius:50%;border:2px solid #FFD400;background:#FFD400}
+.hero{background:radial-gradient(circle at 84% 18%,rgba(255,212,0,.25),transparent 31%),linear-gradient(135deg,#FFF8C7,#FFFFFF)}
+.eyebrow{color:#C62828;letter-spacing:.14em}
+.hero h1{color:#171717}.hero h1 span{color:#E53935}.hero p{color:#5f5f5f}
+.hero-card{background:linear-gradient(145deg,#FFD400,#F5C900);color:#1A1A1A;box-shadow:0 24px 55px rgba(229,57,53,.16)}
+.hero-card:before{background:#E53935}.hero-card p{color:#3a2a00}.hero-card small{color:#7A0000}
+.btn-primary{background:#E53935;color:#fff;box-shadow:0 10px 24px rgba(229,57,53,.20)}.btn-primary:hover{background:#B71C1C}
+.btn-light{background:#fff;color:#1A1A1A;border:1px solid #E9D99A}
+.categories a{color:#1A1A1A}.categories a:first-child{border-bottom-color:#E53935}
+.filter.active,.filter:hover{background:#E53935;color:#fff}
+.product-cat,.tag,.text-btn{color:#C62828}
+.services{background:#FFF3A6}.service-card{background:#fff;border-color:rgba(229,57,53,.12)}
+.service-card.highlight{border-color:#E53935;box-shadow:0 12px 30px rgba(229,57,53,.10)}
+.about-box{background:#FFF6B8;border:1px solid rgba(255,212,0,.35)}
+.reviews{background:#FFFBEA}.review-card{background:#fff;border-color:rgba(229,57,53,.12)}.review-card .stars{color:#E53935}
+.location{background:#FFF3A6}.location-info-card{background:#fff;border-color:#E9D36B}
+footer{background:#1A1A1A;color:#FFF}.cart-button{background:#E53935;color:#fff}.cart-button strong{background:#FFD400;color:#1A1A1A}
+
+
+/* ================= BINHO — IDENTIDADE VISUAL ================= */
+:root{
+  --primary:#1976D2;
+  --secondary:#43A047;
+  --accent:#43A047;
+  --background:#F4FAFF;
+  --background-light:#FFFFFF;
+  --card:#FFFFFF;
+  --text:#17212B;
+  --text-muted:#66727E;
+  --border:rgba(25,118,210,.12);
+}
+body{background:#F4FAFF;color:#17212B}
+.topbar{background:rgba(255,255,255,.97);border-bottom:1px solid rgba(25,118,210,.12);box-shadow:0 4px 18px rgba(25,118,210,.06)}
+.nav-links a{color:#17212B}.nav-links a:hover{color:#1976D2}
+.hero{background:radial-gradient(circle at 84% 18%,rgba(25,118,210,.18),transparent 31%),linear-gradient(135deg,#E8F3FF,#FFFFFF)}
+.eyebrow{color:#1976D2;letter-spacing:.14em}
+.hero h1{color:#17212B}.hero h1 span{color:#43A047}.hero p{color:#5F6B76}
+.hero-card{background:linear-gradient(145deg,#1976D2,#1565C0);color:#fff;box-shadow:0 24px 55px rgba(25,118,210,.18)}
+.hero-card:before{background:#43A047}.hero-card p{color:#EAF4FF}.hero-card small{color:#D7F2DB}
+.btn-primary{background:#43A047;color:#fff;box-shadow:0 10px 24px rgba(67,160,71,.20)}.btn-primary:hover{background:#2E7D32}
+.btn-light{background:#fff;color:#17212B;border:1px solid #BFD8EF}
+.categories a{color:#17212B}.categories a:first-child{border-bottom-color:#43A047}
+.filter.active,.filter:hover{background:#1976D2;color:#fff}
+.product-cat,.tag,.text-btn{color:#1976D2}
+.services{background:#E8F5E9}.service-card{background:#fff;border-color:rgba(67,160,71,.14)}
+.service-card.highlight{border-color:#43A047;box-shadow:0 12px 30px rgba(67,160,71,.10)}
+.about-box{background:#EAF4FF;border:1px solid rgba(25,118,210,.18)}
+.reviews{background:#F4FAFF}.review-card{background:#fff;border-color:rgba(25,118,210,.12)}.review-card .stars{color:#43A047}
+.location{background:#E8F5E9}.location-info-card{background:#fff;border-color:#B8DDBA}
+footer{background:#12304A;color:#FFF}.cart-button{background:#43A047;color:#fff}.cart-button strong{background:#1976D2;color:#fff}
